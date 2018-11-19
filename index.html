@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+<meta charset="utf-8">
+<head>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container" id="result"></div>
+<script src="xml2json.min.js"></script>
+	<script>
+  var filteredData;
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+	  var x2js = new X2JS();
+	  var response = x2js.xml_str2json(this.responseText);
+	  var result =response.Workbook.Worksheet[0].Table.Row;
+	  getData(result,'2018-11-13','2018-11-15');
+     }
+  };
+  xhttp.open("GET", "data.xml", true);
+  xhttp.send();
+  
+
+function onlyUnique(value, index, self) { 
+    return self.indexOf(value) === index;
+}
+
+function formateDate(arg){
+return new Date(arg).getFullYear()+'-'+(new Date(arg).getMonth()+1)+'-'+ new Date(arg).getDate();
+}
+
+function getData(data,startDate,endDate){
+var len = data.length;
+var filteredData=data.filter(function(value){
+var date=new Date(formateDate(value.Cell[0].Data.__text)).getTime();
+
+if( date >= new Date(startDate).getTime()  && date <= new Date(endDate).getTime()){
+return true;
+}	
+
+});
+
+  filteredData.sort(function(a,b){
+	return new Date(a.Cell[0].Data.__text).getTime() - new Date(b.Cell[0].Data.__text).getTime();
+  });
+  
+  createWordList(filteredData);
+  
+}
+
+
+function createWordList(arg){
+var data="";
+var len=arg.length;
+var actualStartDate=formateDate(arg[0].Cell[0].Data.__text);
+var actualEndDate=formateDate(arg[len-1].Cell[0].Data.__text);
+data +="<div class='dates-container'>";
+data +="<span class='date'> From " + actualStartDate  +" To  "+actualEndDate+"</span>";
+data +="</div>";
+data +="<div class='content'>";
+for(var i=0;i<arg.length;i++){
+var dateT=formateDate(arg[i].Cell[0].Data.__text);
+var descT=arg[i].Cell[1].Data.__text;
+if(i==0){
+data +="<div class='data active'>";
+data +="<span class='data-date'>";
+data +=dateT;
+data +="</span>  ";
+data +="<span class='data-desc'>";
+data +=descT;
+data +="</span>";
+data +="</div>";
+}else{
+
+data +="<div class='data'>";
+data +="<span class='data-date'>";
+data +=dateT;
+data +="</span>  ";
+data +="<span class='data-desc'>";
+data +=descT;
+data +="</span>";
+data +="</div>";
+}
+
+}
+data +="</div>";
+document.getElementById('result').innerHTML=data;
+
+changeWords();
+
+}
+
+
+function changeWords(){
+   var div = Array.prototype.slice.call(document.querySelectorAll('.data'));
+   var div_count = div.length;
+   var active_div_index = 0;
+   
+   setInterval(function(){
+      var active_div = document.querySelector('.data.active');
+      
+      if( div.indexOf(active_div) == div_count-1 ){
+		active_div_index  = 0;
+	  } 
+      else{
+	   active_div_index++;
+	  }        
+      active_div.classList.remove('active');
+      document.querySelectorAll('.data')[active_div_index].classList.add('active');
+   }, 10000);
+}
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>ms82</Author>
+  <LastAuthor>ms82</LastAuthor>
+  <Created>2018-10-08T05:39:35Z</Created>
+  <LastSaved>2018-10-08T08:24:18Z</LastSaved>
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12435</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <NumberFormat ss:Format="m/d/yyyy"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Data Source">
+  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="18" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="93"/>
+   <Column ss:AutoFitWidth="0" ss:Width="238.5"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Date</Data></Cell>
+    <Cell><Data ss:Type="String">Word</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-11T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 10</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-12T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 11</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-13T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-14T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 13</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-15T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 14</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-16T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-17T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 16</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-18T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 17</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-19T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 18</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-20T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 19</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-21T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 20</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-13T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 21</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-23T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 22</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-24T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 23</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-25T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 24</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-26T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 25</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="DateTime">2018-11-27T00:00:00.000</Data></Cell>
+    <Cell><Data ss:Type="String">Today's Word Blah Blah Blah 26</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>12</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C3</Range>
+   <Type>List</Type>
+   <Value>bsLine</Value>
+  </DataValidation>
+ </Worksheet>
+ <Worksheet ss:Name="KeepThisEmpty">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Row ss:AutoFitHeight="0"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>1</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C1</Range>
+   <Type>List</Type>
+   <Value>bsLine</Value>
+  </DataValidation>
+ </Worksheet>
+</Workbook>
